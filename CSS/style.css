@@ -4,34 +4,38 @@ background: black;
 
 h1 {
   color:white;
-}
-
-.container {
-  background-image: url(http://www.paoxiangbkt.com/wp-content/uploads/2015/02/sl-scroll.png);
-  background-size: cover;
+  margin: 25px auto 0 135px;
 }
 
 .mainSection {
-  background: none;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLLIqUV25X34Dsy4hjEHWEa1Of1BjizJxUKYkvD_ZqWPkufdN);
+  background-size: cover;
+  width: 900px;
+  text-align: center;
+  margin: 0 0 0 145px;
 }
 
 .question {
-  background: black;
+/*  background-image: url(http://www.oldroseland.com/images/paper_scroll.gif);
+  background-size:cover;*/
   height: 100px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  color: white;
-  font-size:18px;
+  color: black;
+  font-size:20px;
+  font-weight: bold;
   text-align:center;
 }
 
 .imageSelection {
   text-align: center;
-  background: black;
+  background: none;
 }
 
 img {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   height: 300px;
   width: 400px;
 }
@@ -42,20 +46,30 @@ img {
 }
 
 .buttonBack {
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .buttonOne {
-  width: 350px;
-  height: 70px;
+  width: 400px;
+  height: 50px;
   background: red;
   color: white;
   font-size: 24px;
 }
 
 .buttonTwo {
-  width: 350px;
-  height: 70px;
+  width: 400px;
+  height: 50px;
   background: green;
   color: white;
   font-size: 24px;
+}
+
+.buttonThree {
+  width: 240px;
+  height: 50px;
+  background: blue;
+  color: white;
+  font-size: 20px;
 }
