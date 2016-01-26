@@ -1,26 +1,61 @@
 body {
-  background: black;
+background: black;
 }
 
 h1 {
   color:white;
 }
 
-.main-section {
-  background: red;
-  height: 100px;
+.container {
+  background-image: url(http://www.paoxiangbkt.com/wp-content/uploads/2015/02/sl-scroll.png);
+  background-size: cover;
+}
+
+.mainSection {
+  background: none;
 }
 
 .question {
-  background: yellow;
+  background: black;
   height: 100px;
+  margin-bottom: 20px;
+  color: white;
+  font-size:18px;
+  text-align:center;
 }
 
-.image-selection {
+.imageSelection {
   text-align: center;
+  background: black;
 }
+
 img {
-  display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  height: 300px;
+  width: 400px;
+}
+
+.buttonRow {
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+
+.buttonBack {
+  text-align: center;
+}
+.buttonOne {
+  width: 350px;
+  height: 70px;
+  background: red;
+  color: white;
+  font-size: 24px;
+}
+
+.buttonTwo {
+  width: 350px;
+  height: 70px;
+  background: green;
+  color: white;
+  font-size: 24px;
 }
