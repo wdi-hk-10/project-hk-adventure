@@ -1,0 +1,26 @@
+body {
+  background: black;
+}
+
+h1 {
+  color:white;
+}
+
+.main-section {
+  background: red;
+  height: 100px;
+}
+
+.question {
+  background: yellow;
+  height: 100px;
+}
+
+.image-selection {
+  text-align: center;
+}
+img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
