@@ -1,15 +1,22 @@
 body {
-background: black;
+  background-image: url(http://thumb1.shutterstock.com/display_pic_with_logo/2585281/226356778/stock-vector-vector-seamless-pattern-with-mahjong-tiles-on-white-background-226356778.jpg);
 }
 
-h1 {
+.topHeading {
+  background: black;
+}
+
+.h1 {
   color:white;
+  background: black;
   margin: 25px auto 0 135px;
+
 }
 
 .mainSection {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLLIqUV25X34Dsy4hjEHWEa1Of1BjizJxUKYkvD_ZqWPkufdN);
-  background-size: cover;
+/*  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLLIqUV25X34Dsy4hjEHWEa1Of1BjizJxUKYkvD_ZqWPkufdN*/);
+/*  background-size: cover;*/
+  background: white;
   width: 900px;
   text-align: center;
   margin: 0 0 0 145px;
