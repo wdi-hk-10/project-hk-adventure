@@ -1,21 +1,20 @@
 body {
-  background-image: url(http://thumb1.shutterstock.com/display_pic_with_logo/2585281/226356778/stock-vector-vector-seamless-pattern-with-mahjong-tiles-on-white-background-226356778.jpg);
+  background-image: url("http://thumb1.shutterstock.com/display_pic_with_logo/2585281/226356778/stock-vector-vector-seamless-pattern-with-mahjong-tiles-on-white-background-226356778.jpg");
 }
 
 .topHeading {
+/*  background-image: url("../images/hongkong2.jpg");*/
   background: black;
-}
-
-.h1 {
-  color:white;
-  background: black;
-  margin: 25px auto 0 135px;
-
+/*  background-size: cover;*/
+  background-position: center;
+  width: 900px;
+  height: 150px;
+  text-align: center;
+  margin: 15px 0 0 145px;
+  color: white;
 }
 
 .mainSection {
-/*  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLLIqUV25X34Dsy4hjEHWEa1Of1BjizJxUKYkvD_ZqWPkufdN*/);
-/*  background-size: cover;*/
   background: white;
   width: 900px;
   text-align: center;
@@ -25,9 +24,9 @@ body {
 .question {
 /*  background-image: url(http://www.oldroseland.com/images/paper_scroll.gif);
   background-size:cover;*/
-  height: 100px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: black;
   font-size:20px;
   font-weight: bold;
