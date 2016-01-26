@@ -4,18 +4,19 @@ body {
 
 .topHeading {
 /*  background-image: url("../images/hongkong2.jpg");*/
-  background: black;
+  background: url(../images/HEADER.png);
 /*  background-size: cover;*/
   background-position: center;
   width: 900px;
-  height: 150px;
+  height: 220px;
   text-align: center;
-  margin: 15px 0 0 145px;
+  margin: 0 0 0 145px;
   color: white;
 }
 
 .mainSection {
-  background: white;
+  background-image: url(../images/border.png);
+  background-size: cover;
   width: 900px;
   text-align: center;
   margin: 0 0 0 145px;
@@ -24,13 +25,14 @@ body {
 .question {
 /*  background-image: url(http://www.oldroseland.com/images/paper_scroll.gif);
   background-size:cover;*/
-  height: 70px;
-  margin-top: 20px;
+  height: 60px;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: black;
-  font-size:20px;
+  font-size:24px;
   font-weight: bold;
   text-align:center;
+  font-family: 'Special Elite', cursive;
 }
 
 .imageSelection {
@@ -46,6 +48,13 @@ img {
   width: 400px;
 }
 
+.imageOne {
+  margin-left: 20px;
+}
+
+.imageTwo {
+  margin-right: 20px;
+}
 .buttonRow {
   margin: 20px 0 30px 0;
   text-align: center;
@@ -62,6 +71,7 @@ img {
   background: red;
   color: white;
   font-size: 24px;
+  margin-left: 20px;
 }
 
 .buttonTwo {
@@ -70,6 +80,7 @@ img {
   background: green;
   color: white;
   font-size: 24px;
+  margin-right: 20px;
 }
 
 .buttonThree {
@@ -78,4 +89,5 @@ img {
   background: blue;
   color: white;
   font-size: 20px;
+  margin-bottom: 30px;
 }
