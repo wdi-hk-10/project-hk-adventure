@@ -53,23 +53,34 @@ $(document).ready(function(){
 
   setCurrentScene();
 
+  foodScene.option1 = junkScene;
+  foodScene.option2 = barScene;
+  junkScene.option1 = barScene;
+  junkScene.option2 = foodScene;
 
-  var option1 = function() {
-    this.option1 = currentScene;
-  }
+  $(".buttonOne").on("click", function(){
+    currentScene = foodScene.option1;
+    setCurrentScene();
+  });
 
-  // currentScene = junkScene;
-  // setCurrentScene();
+  $(".buttonTwo").on("click", function(){
+    currentScene = foodScene.option2;
+    setCurrentScene();
+  });
 
-  // $(".buttonOne").on("click", function(){
-  //   option1();
-  //   setCurrentScene();
-  // });
+  $(".buttonOne").on("click", function(){
+    currentScene = junkScene.option1;
+    setCurrentScene();
+  });
+
+   $(".buttonTwo").on("click", function(){
+    currentScene = junkScene.option1;
+    setCurrentScene();
+  });
 
 // -----
 
-// foodScene.option1 = junkScene;
-// foodScene.option2 = barScene;
+//
 // currentSceneFn();
 //   // display stuff from the scene
 
