@@ -29,7 +29,7 @@ var carbOverloadScene = new Scene({
   buttonTwo: "Foot Massage"
 });
 
-var foodPoisoningScene = new Scene({
+var foodPoisonScene = new Scene({
   imageOne: "./images/hkTaxi.jpg",
   imageTwo: "./images/hkMtr.jpg",
   question: "The swanky restaurant in Central gave you food poisoning and you feel ill immediately. You need to get to the hospital ASAP - how do you travel?",
@@ -37,15 +37,39 @@ var foodPoisoningScene = new Scene({
   buttonTwo: "MTR and then walk (run)"
 });
 
-var junkScene = new Scene({
+var afterJunkScene = new Scene({
   imageOne: "./images/HK1.jpg",
-  imageTwo: "./images/fancybar.jpg",
-  question: "Now you're full on carbs. Want to go on a Junk or Foot massage?",
-  buttonOne: "Junk time!!!",
-  buttonTwo: "Foot Massage!!!"
+  imageTwo: "./images/14517.jpg",
+  question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
+  buttonOne: "LKF woohoo!!!",
+  buttonTwo: "WanChai woohoo!!!",
 });
 
-var barScene = new Scene({
+var afterFootScene = new Scene({
+  imageOne: "./images/HK1.jpg",
+  imageTwo: "./images/14517.jpg",
+  question: "After the foot massage, you decided to get a 3 hour body massage. You are now ready to party - where do you go?",
+  buttonOne: "LKF woohoo!!!",
+  buttonTwo: "WanChai woohoo!!!",
+});
+
+var afterTaxiScene = new Scene({
+  imageOne: "./images/HK1.jpg",
+  imageTwo: "./images/14517.jpg",
+  question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
+  buttonOne: "LKF woohoo!!!",
+  buttonTwo: "WanChai woohoo!!!",
+});
+
+var afterMtrScene = new Scene({
+  imageOne: "./images/HK1.jpg",
+  imageTwo: "./images/14517.jpg",
+  question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
+  buttonOne: "LKF woohoo!!!",
+  buttonTwo: "WanChai woohoo!!!",
+});
+
+var lkfScene = new Scene({
   imageOne: "./images/HK1.jpg",
   imageTwo: "./images/14517.jpg",
   question: "You are wasted after the Junk. Where do you go now?",
@@ -53,6 +77,13 @@ var barScene = new Scene({
   buttonTwo: "WanChai woohoo!!!",
 });
 
+var wanChaiScene = new Scene({
+  imageOne: "./images/HK1.jpg",
+  imageTwo: "./images/14517.jpg",
+  question: "You are wasted after the Junk. Where do you go now?",
+  buttonOne: "LKF woohoo!!!",
+  buttonTwo: "WanChai woohoo!!!",
+});
 
 // TO START THE GAME
 $(document).ready(function(){
@@ -69,10 +100,8 @@ $(document).ready(function(){
 
   setCurrentScene();
 
-  foodScene.option1 = junkScene;
-  foodScene.option2 = barScene;
-  junkScene.option1 = barScene;
-  junkScene.option2 = foodScene;
+  foodScene.option1 = carbOverloadScene;
+  foodScene.option2 = foodPoisonScene;
 
   $(".buttonOne").on("click", function(){
     currentScene = foodScene.option1;
@@ -84,44 +113,24 @@ $(document).ready(function(){
     setCurrentScene();
   });
 
+  carbOverloadScene.option1 = afterJunkScene;
+  carbOverloadScene.option2 = afterFootScene;
+
   $(".buttonOne").on("click", function(){
-    currentScene = junkScene.option1;
+    currentScene = carbOverloadScene.option1;
     setCurrentScene();
   });
 
    $(".buttonTwo").on("click", function(){
-    currentScene = junkScene.option1;
+    currentScene = carbOverloadScene.option2;
     setCurrentScene();
   });
 
-// -----
-
-//
-// currentSceneFn();
-//   // display stuff from the scene
-
-  // var currentScene = junkScene;
-  //
-
-// var currentScene = barScene
-// currentSceneFn();
+// foodPoisonScene.option1 = afterTaxiScene;
+// foodPoisonScene.option1 = afterMtrScene;
 
 
-// // Linking the scenes
-// foodScene.option1 = junkScene;
-// foodScene.option2 = barScene;
-//  var currentScene = foodScene;
-//   // display stuff from the scene
 
-  // $(".buttonOne").on("click", function(){
-  //   var currentScene = junkScene;
-
-  //   currentSceneFn();
-  // }
-  // $(".buttonTwo").on("click", function(){
-  //   var currentScene = barScene;
-  //   currentSceneFn();
-  // }
 //DON'T DELETE THE BELOW
 });
 
