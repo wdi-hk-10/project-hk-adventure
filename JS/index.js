@@ -117,17 +117,17 @@ $(document).ready(function(){
   carbOverloadScene.option2 = afterFootScene;
 
   $(".buttonOne").on("click", function(){
-    currentScene = carbOverloadScene.option1;
+    currentScene = foodScene.option1;
     setCurrentScene();
   });
 
    $(".buttonTwo").on("click", function(){
-    currentScene = carbOverloadScene.option2;
+    currentScene = foodScene.option2;
     setCurrentScene();
   });
 
-// foodPoisonScene.option1 = afterTaxiScene;
-// foodPoisonScene.option1 = afterMtrScene;
+  foodPoisonScene.option1 = afterTaxiScene;
+  foodPoisonScene.option1 = afterMtrScene;
 
 
 
