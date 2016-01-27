@@ -70,8 +70,8 @@ var lkfScene = new Scene({
 });
 
 var wanChaiScene = new Scene({
-  imageOne: "./images/.jpg",
-  imageTwo: "./images/.jpg",
+  imageOne: "./images/karaoke.jpg",
+  imageTwo: "./images/drink.jpg",
   question: "You are now in Wanchai. What do you want to do?",
   buttonOne: "Karaoke!!!",
   buttonTwo: "Drink!!!"
