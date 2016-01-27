@@ -38,40 +38,40 @@ var foodPoisonScene = new Scene({
 });
 
 var afterJunkScene = new Scene({
-  imageOne: "./images/HK1.jpg",
-  imageTwo: "./images/14517.jpg",
+  imageOne: "./images/LKF.jpg",
+  imageTwo: "./images/wanChai.jpg",
   question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
   buttonOne: "LKF woohoo!!!",
   buttonTwo: "WanChai woohoo!!!",
 });
 
 var afterFootScene = new Scene({
-  imageOne: "./images/HK1.jpg",
-  imageTwo: "./images/14517.jpg",
+  imageOne: "./images/LKF.jpg",
+  imageTwo: "./images/wanChai.jpg",
   question: "After the foot massage, you decided to get a 3 hour body massage. You are now ready to party - where do you go?",
   buttonOne: "LKF woohoo!!!",
   buttonTwo: "WanChai woohoo!!!",
 });
 
 var afterTaxiScene = new Scene({
-  imageOne: "./images/HK1.jpg",
+  imageOne: "./images/happyValley.jpg",
   imageTwo: "./images/14517.jpg",
-  question: "You have now been dropped off by a Taxi. Well done.",
-  buttonOne: "afterTaxi option 1!!!",
-  buttonTwo: "afterTaxi option 2!!!",
+  question: "You get to the hospital in time. Doc gives you 7 medications for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble?",
+  buttonOne: "Happy Valley races",
+  buttonTwo: "Macau",
 });
 
 var afterMtrScene = new Scene({
-  imageOne: "./images/HK1.jpg",
+  imageOne: "./images/happyValley.jpg",
   imageTwo: "./images/14517.jpg",
-  question: "You caught the MTR. Well done.",
-  buttonOne: "afterMTR option1!!!",
-  buttonTwo: "afterMTR option2!!!",
+  question: "You get to the hospital in time. Doc gives you 7 medications for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble?",
+  buttonOne: "Happy Valley races",
+  buttonTwo: "Macau",
 });
 
 var lkfScene = new Scene({
-  imageOne: "./images/HK1.jpg",
-  imageTwo: "./images/14517.jpg",
+  imageOne: "./images/7-11.jpg",
+  imageTwo: "./images/dragoni.jpg",
   question: "You are now in LKF. Where do you drink?",
   buttonOne: "7 Eleven all the way!!!",
   buttonTwo: "Dragon I!",
@@ -91,9 +91,11 @@ foodScene.option2 = foodPoisonScene;
 carbOverloadScene.option1 = afterJunkScene;
 carbOverloadScene.option2 = afterFootScene;
 foodPoisonScene.option1 = afterTaxiScene;
-foodPoisonScene.option1 = afterMtrScene;
+foodPoisonScene.option2 = afterMtrScene;
 afterJunkScene.option1 = lkfScene;
 afterJunkScene.option2 = wanChaiScene;
+afterFootScene.option1 = lkfScene;
+afterFootScene.option2 = wanChaiScene;
 
 // TO START THE GAME
 $(document).ready(function(){
@@ -124,30 +126,10 @@ $(document).ready(function(){
   setCurrentScene();
   });
 
-//FOOD SCENE --- SWANKY RESTAURANT OPTION 2
-  // $(".buttonOne").on("click", function(){
-  // currentScene = foodPoisonScene.option1;
-  // foodPoisonScene.option1 = afterJunkScene;
-  // setCurrentScene();
-  // });
-
-  // $(".buttonTwo").on("click", function(){
-  // currentScene = foodPoisonScene.option2;
-  // foodPoisonScene.option2 = afterFootScene;
-  // setCurrentScene();
-  // });
-
-
-//FOOD POISON SCENE
-
-  // $(".buttonOne").on("click", function(){
-  //   currentScene = afterJunkScene.option1;
-  //   afterJunkScene.option1 = lkfScene;
-  //   setCurrentScene();
-  // });
-
-
-
+    $(".buttonThree").on("click", function(){
+  currentScene = foodScene;
+  setCurrentScene();
+  });
 
 
 
