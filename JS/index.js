@@ -31,7 +31,7 @@ var carbOverloadScene = new Scene({
 
 var foodPoisonScene = new Scene({
   imageOne: "./images/hkTaxi.jpg",
-  imageTwo: "./images/hkMtr.jpg",
+  imageTwo: "./images/hkMtr.jpeg",
   question: "The swanky restaurant in Central gave you food poisoning and you feel ill immediately. You need to get to the hospital ASAP - how do you travel?",
   buttonOne: "Hong Kong taxi",
   buttonTwo: "MTR and then walk (run)"
@@ -56,34 +56,44 @@ var afterFootScene = new Scene({
 var afterTaxiScene = new Scene({
   imageOne: "./images/HK1.jpg",
   imageTwo: "./images/14517.jpg",
-  question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
-  buttonOne: "LKF woohoo!!!",
-  buttonTwo: "WanChai woohoo!!!",
+  question: "You have now been dropped off by a Taxi. Well done.",
+  buttonOne: "afterTaxi option 1!!!",
+  buttonTwo: "afterTaxi option 2!!!",
 });
 
 var afterMtrScene = new Scene({
   imageOne: "./images/HK1.jpg",
   imageTwo: "./images/14517.jpg",
-  question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
-  buttonOne: "LKF woohoo!!!",
-  buttonTwo: "WanChai woohoo!!!",
+  question: "You caught the MTR. Well done.",
+  buttonOne: "afterMTR option1!!!",
+  buttonTwo: "afterMTR option2!!!",
 });
 
 var lkfScene = new Scene({
   imageOne: "./images/HK1.jpg",
   imageTwo: "./images/14517.jpg",
-  question: "You are wasted after the Junk. Where do you go now?",
-  buttonOne: "LKF woohoo!!!",
-  buttonTwo: "WanChai woohoo!!!",
+  question: "You are now in LKF. Where do you drink?",
+  buttonOne: "7 Eleven all the way!!!",
+  buttonTwo: "Dragon I!",
 });
 
 var wanChaiScene = new Scene({
   imageOne: "./images/HK1.jpg",
   imageTwo: "./images/14517.jpg",
-  question: "You are wasted after the Junk. Where do you go now?",
-  buttonOne: "LKF woohoo!!!",
-  buttonTwo: "WanChai woohoo!!!",
+  question: "You are now in Wanchai. What do you want to do?",
+  buttonOne: "Karaoke!!!",
+  buttonTwo: "Drink!!!",
 });
+
+// MAPPING THE GAME
+foodScene.option1 = carbOverloadScene;
+foodScene.option2 = foodPoisonScene;
+carbOverloadScene.option1 = afterJunkScene;
+carbOverloadScene.option2 = afterFootScene;
+foodPoisonScene.option1 = afterTaxiScene;
+foodPoisonScene.option1 = afterMtrScene;
+afterJunkScene.option1 = lkfScene;
+afterJunkScene.option2 = wanChaiScene;
 
 // TO START THE GAME
 $(document).ready(function(){
@@ -100,34 +110,46 @@ $(document).ready(function(){
 
   setCurrentScene();
 
-  foodScene.option1 = carbOverloadScene;
-  foodScene.option2 = foodPoisonScene;
+  // BUTTON ONE
+
+// STARTING PAGE
 
   $(".buttonOne").on("click", function(){
-    currentScene = foodScene.option1;
-    setCurrentScene();
+  currentScene = currentScene.option1;
+  setCurrentScene();
   });
 
   $(".buttonTwo").on("click", function(){
-    currentScene = foodScene.option2;
-    setCurrentScene();
+  currentScene = currentScene.option2;
+  setCurrentScene();
   });
 
-  carbOverloadScene.option1 = afterJunkScene;
-  carbOverloadScene.option2 = afterFootScene;
+//FOOD SCENE --- SWANKY RESTAURANT OPTION 2
+  // $(".buttonOne").on("click", function(){
+  // currentScene = foodPoisonScene.option1;
+  // foodPoisonScene.option1 = afterJunkScene;
+  // setCurrentScene();
+  // });
 
-  $(".buttonOne").on("click", function(){
-    currentScene = foodScene.option1;
-    setCurrentScene();
-  });
+  // $(".buttonTwo").on("click", function(){
+  // currentScene = foodPoisonScene.option2;
+  // foodPoisonScene.option2 = afterFootScene;
+  // setCurrentScene();
+  // });
 
-   $(".buttonTwo").on("click", function(){
-    currentScene = foodScene.option2;
-    setCurrentScene();
-  });
 
-  foodPoisonScene.option1 = afterTaxiScene;
-  foodPoisonScene.option1 = afterMtrScene;
+//FOOD POISON SCENE
+
+  // $(".buttonOne").on("click", function(){
+  //   currentScene = afterJunkScene.option1;
+  //   afterJunkScene.option1 = lkfScene;
+  //   setCurrentScene();
+  // });
+
+
+
+
+
 
 
 
