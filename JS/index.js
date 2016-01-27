@@ -56,7 +56,7 @@ var afterFootScene = new Scene({
 var hospitalScene = new Scene({
   imageOne: "./images/happyValley.jpg",
   imageTwo: "./images/macau.jpg",
-  question: "You get to the hospital in time. Doc gives you 7 medications for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble?",
+  question: "You get to the hospital in time. Doc gives you 7 medications for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble with friends?",
   buttonOne: "Happy Valley races",
   buttonTwo: "Macau"
 });
@@ -78,28 +78,101 @@ var wanChaiScene = new Scene({
 });
 
 var happyValleyScene = new Scene({
-  imageOne: "./images/.jpg",
-  imageTwo: "./images/.jpg",
+  imageOne: "./images/corporate.jpg",
+  imageTwo: "./images/crazyCrowd.jpg",
   question: "You have arrived at Happy Valley. Where do you go to watch the races?",
   buttonOne: "Corporate box",
   buttonTwo: "With the crazy crowd"
 });
 
 var crazyCrowdScene = new Scene({
-  imageOne: "./images/HK1.jpg",
-  imageTwo: "./images/HK1.jpg",
+  imageOne: "./images/vader.jpg",
+  imageTwo: "./images/batGirl.jpg",
   question: "You're in the crowd and it's fancy dress all the way. Who do you party with?",
   buttonOne: "Darth Vader",
-  buttonTwo: "Skanky girl"
+  buttonTwo: "Bat girl"
 });
 
 var macauScene = new Scene({
-  imageOne: "./images/HK1.jpg",
-  imageTwo: "./images/HK1.jpg",
-  question: "Wow it's off to Macau huh? How will you travel?",
+  imageOne: "./images/ferry.jpg",
+  imageTwo: "./images/helicopter.png",
+  question: "Wow it's off to Macau huh? How will you travel with your friends?",
   buttonOne: "Ferry",
   buttonTwo: "Helicopter VIP all the way"
 });
+
+var end1Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/tHlOuVV6adMkM.gif",
+  question: "You pass out in the gutter. After waking up you grab a burrito and stumble home at 7am. Hungover for days. Well done.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end2Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/qAY88sMHhEPnO.gif",
+  question: "You bump into Usher in dragonI and dance it up.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end3Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/TMu8bS0hQxCX6.gif",
+  question: "You nailed the latest Justin Bieber song. Went home a hero - well done.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end4Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/phsUpW8VbXgRO.gif",
+  question: "In a case of mistaken identiy,a HK triad gang storms the bar. You drunkenly fight them off, and they all go home crying to their mother.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end5Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/Achrz20r7S7Di.gif",
+  question: "You have a boring night out with boring people in suits. You wish you were out with the crowd having fun. Bad move - go home and sulk.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end6Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/Vj9poc6x6zg8E.gif",
+  question: "Turns out Vader can kick it. You have the best night of your life.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end7Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/599WsrtJIj2b6.gif",
+  question: "Bat girl turns out to be one of the most notorious con- artists in Hong Kong. You lose your wallet, phone, watch, clothes and dignity.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end8Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/AYKv7lXcZSJig.gif",
+  question: "Your friends can't believe you chose the ferry and ditch you for the helicopter. You go to buy a ferry ticket only to be told they're all sold out. It then starts to rain. Go home and sulk that you chose a bad option.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
+var end9Scene = new Scene({
+  imageOne: "./images/gameOver.jpg",
+  imageTwo: "http://i.giphy.com/l3nWmPFBffbkCd3Ow.gif",
+  question: "You win at everything. Pay for a night at the penthouse suite at the Wynn and have the Best. Night. Ever.",
+  buttonOne: "",
+  buttonTwo: ""
+});
+
 
 // MAPPING THE GAME
 foodScene.option1 = carbOverloadScene;
@@ -115,20 +188,22 @@ afterFootScene.option2 = wanChaiScene;
 hospitalScene.option1 = happyValleyScene;
 hospitalScene.option2 = macauScene;
 happyValleyScene.option2 = crazyCrowdScene;
-// lkfScene.option1 = end1Scene;
-// lkfScene.option2 = end2Scene;
-// wanChaiScene.option1 = end3Scene;
-// wanChaiScene.option2 = end4Scene;
-// happyValleyScene.option1 = end5Scene;
-// crazyCrowdScene.option1 = end6Scene;
-// crazyCrowdScene.otpion2 = end7Scene;
-// macauScene.option1 = end8Scene;
-// macauScene.option2 = end9Scene;
+lkfScene.option1 = end1Scene;
+lkfScene.option2 = end2Scene;
+wanChaiScene.option1 = end3Scene;
+wanChaiScene.option2 = end4Scene;
+happyValleyScene.option1 = end5Scene;
+crazyCrowdScene.option1 = end6Scene;
+crazyCrowdScene.otpion2 = end7Scene;
+macauScene.option1 = end8Scene;
+macauScene.option2 = end9Scene;
 
 
 
 // TO START THE GAME
 $(document).ready(function(){
+
+
 
   var setCurrentScene = function() {
     $(".imageOne").attr("src", currentScene.imageOne);
@@ -160,9 +235,6 @@ $(document).ready(function(){
   currentScene = foodScene;
   setCurrentScene();
   });
-
-
-
 
 
 //DON'T DELETE THE BELOW
