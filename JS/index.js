@@ -42,7 +42,7 @@ var afterJunkScene = new Scene({
   imageTwo: "./images/wanChai.jpg",
   question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
   buttonOne: "LKF woohoo!!!",
-  buttonTwo: "WanChai woohoo!!!",
+  buttonTwo: "WanChai woohoo!!!"
 });
 
 var afterFootScene = new Scene({
@@ -50,23 +50,15 @@ var afterFootScene = new Scene({
   imageTwo: "./images/wanChai.jpg",
   question: "After the foot massage, you decided to get a 3 hour body massage. You are now ready to party - where do you go?",
   buttonOne: "LKF woohoo!!!",
-  buttonTwo: "WanChai woohoo!!!",
+  buttonTwo: "WanChai woohoo!!!"
 });
 
-var afterTaxiScene = new Scene({
+var hospitalScene = new Scene({
   imageOne: "./images/happyValley.jpg",
-  imageTwo: "./images/14517.jpg",
+  imageTwo: "./images/macau.jpg",
   question: "You get to the hospital in time. Doc gives you 7 medications for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble?",
   buttonOne: "Happy Valley races",
-  buttonTwo: "Macau",
-});
-
-var afterMtrScene = new Scene({
-  imageOne: "./images/happyValley.jpg",
-  imageTwo: "./images/14517.jpg",
-  question: "You get to the hospital in time. Doc gives you 7 medications for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble?",
-  buttonOne: "Happy Valley races",
-  buttonTwo: "Macau",
+  buttonTwo: "Macau"
 });
 
 var lkfScene = new Scene({
@@ -74,15 +66,39 @@ var lkfScene = new Scene({
   imageTwo: "./images/dragoni.jpg",
   question: "You are now in LKF. Where do you drink?",
   buttonOne: "7 Eleven all the way!!!",
-  buttonTwo: "Dragon I!",
+  buttonTwo: "Dragon I!"
 });
 
 var wanChaiScene = new Scene({
-  imageOne: "./images/HK1.jpg",
-  imageTwo: "./images/14517.jpg",
+  imageOne: "./images/.jpg",
+  imageTwo: "./images/.jpg",
   question: "You are now in Wanchai. What do you want to do?",
   buttonOne: "Karaoke!!!",
-  buttonTwo: "Drink!!!",
+  buttonTwo: "Drink!!!"
+});
+
+var happyValleyScene = new Scene({
+  imageOne: "./images/.jpg",
+  imageTwo: "./images/.jpg",
+  question: "You have arrived at Happy Valley. Where do you go to watch the races?",
+  buttonOne: "Corporate box",
+  buttonTwo: "With the crazy crowd"
+});
+
+var crazyCrowdScene = new Scene({
+  imageOne: "./images/HK1.jpg",
+  imageTwo: "./images/HK1.jpg",
+  question: "You're in the crowd and it's fancy dress all the way. Who do you party with?",
+  buttonOne: "Darth Vader",
+  buttonTwo: "Skanky girl"
+});
+
+var macauScene = new Scene({
+  imageOne: "./images/HK1.jpg",
+  imageTwo: "./images/HK1.jpg",
+  question: "Wow it's off to Macau huh? How will you travel?",
+  buttonOne: "Ferry",
+  buttonTwo: "Helicopter VIP all the way"
 });
 
 // MAPPING THE GAME
@@ -90,12 +106,26 @@ foodScene.option1 = carbOverloadScene;
 foodScene.option2 = foodPoisonScene;
 carbOverloadScene.option1 = afterJunkScene;
 carbOverloadScene.option2 = afterFootScene;
-foodPoisonScene.option1 = afterTaxiScene;
-foodPoisonScene.option2 = afterMtrScene;
+foodPoisonScene.option1 = hospitalScene;
+foodPoisonScene.option2 = hospitalScene;
 afterJunkScene.option1 = lkfScene;
 afterJunkScene.option2 = wanChaiScene;
 afterFootScene.option1 = lkfScene;
 afterFootScene.option2 = wanChaiScene;
+hospitalScene.option1 = happyValleyScene;
+hospitalScene.option2 = macauScene;
+happyValleyScene.option2 = crazyCrowdScene;
+// lkfScene.option1 = end1Scene;
+// lkfScene.option2 = end2Scene;
+// wanChaiScene.option1 = end3Scene;
+// wanChaiScene.option2 = end4Scene;
+// happyValleyScene.option1 = end5Scene;
+// crazyCrowdScene.option1 = end6Scene;
+// crazyCrowdScene.otpion2 = end7Scene;
+// macauScene.option1 = end8Scene;
+// macauScene.option2 = end9Scene;
+
+
 
 // TO START THE GAME
 $(document).ready(function(){
