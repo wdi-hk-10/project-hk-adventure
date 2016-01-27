@@ -1,10 +1,10 @@
 body {
-  background-image: url("http://thumb1.shutterstock.com/display_pic_with_logo/2585281/226356778/stock-vector-vector-seamless-pattern-with-mahjong-tiles-on-white-background-226356778.jpg");
+  background-image: url("../images/background.jpg");
 }
 
 .topHeading {
 /*  background-image: url("../images/hongkong2.jpg");*/
-  background: url(../images/HEADER.png);
+  background: url("../images/HEADER.png");
 /*  background-size: cover;*/
   background-position: center;
   width: 900px;
@@ -14,8 +14,24 @@ body {
   color: white;
 }
 
+.headingPicOne {
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  margin-left: -375px;
+  margin-top: 45px;
+}
+
+.headingPicTwo {
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  margin-left: -275px;
+  margin-top: 45px;
+}
+
 .mainSection {
-  background-image: url(../images/border.png);
+  background-image: url("../images/border.png");
   background-size: cover;
   width: 900px;
   text-align: center;

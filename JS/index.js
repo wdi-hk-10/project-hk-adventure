@@ -18,7 +18,8 @@ var foodScene = new Scene({
   imageTwo: "./images/fancybar2.jpg",
   question: "It's 12pm. Time to Eat. Where do you go?",
   buttonOne: "Dim Sum!!!",
-  buttonTwo: "Swanky Restaurant"
+  buttonTwo: "Swanky Restaurant",
+  audioOne: "./images/chat.mp3"
 });
 
 var carbOverloadScene = new Scene({
@@ -56,7 +57,7 @@ var afterFootScene = new Scene({
 var hospitalScene = new Scene({
   imageOne: "./images/happyValley.jpg",
   imageTwo: "./images/macau.jpg",
-  question: "You get to the hospital in time. Doc gives you 7 medications for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble with friends?",
+  question: "You get to the hospital in time. Doc gives you 7 drugs for each symptom. You miraculously feel better and feel super lucky. Where do you go to gamble with friends?",
   buttonOne: "Happy Valley races",
   buttonTwo: "Macau"
 });
@@ -78,7 +79,7 @@ var wanChaiScene = new Scene({
 });
 
 var happyValleyScene = new Scene({
-  imageOne: "./images/corporate.jpg",
+  imageOne: "./images/corporate.jpeg",
   imageTwo: "./images/crazyCrowd.jpg",
   question: "You have arrived at Happy Valley. Where do you go to watch the races?",
   buttonOne: "Corporate box",
@@ -194,7 +195,7 @@ wanChaiScene.option1 = end3Scene;
 wanChaiScene.option2 = end4Scene;
 happyValleyScene.option1 = end5Scene;
 crazyCrowdScene.option1 = end6Scene;
-crazyCrowdScene.otpion2 = end7Scene;
+crazyCrowdScene.option2 = end7Scene;
 macauScene.option1 = end8Scene;
 macauScene.option2 = end9Scene;
 
