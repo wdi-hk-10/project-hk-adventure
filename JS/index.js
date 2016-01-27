@@ -207,10 +207,15 @@ $(document).ready(function(){
 // $('.headingPicTwo').fadeTo( "slow" , 0.0, function() {
 
 function blink(){
-    $('.headingPicTwo').delay(500).fadeTo(100,0.0).delay(100).fadeTo(100,1, blink);
+  $(".headingPicTwo").delay(500).fadeTo(100,0.0).delay(100).fadeTo(100,1, blink);
 }
-    blink();
+blink();
 
+function lanternEntrance () {
+  $(".rightLantern").animate({right: '110px'});
+  $(".leftLantern").animate({left: '130px'});
+}
+lanternEntrance();
 
   var setCurrentScene = function() {
     $(".imageOne").attr("src", currentScene.imageOne);

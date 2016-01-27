@@ -22,13 +22,28 @@ body {
 }
 
 .headingPicTwo {
-  width: 275px;
+  width: 270px;
   height: 65px;
   position: absolute;
   margin-left: 185px;
   margin-top: 91px;
 }
 
+.rightLantern {
+  position: absolute;
+  width: 130px;
+  height:300px;
+  margin-left:1275px;
+  margin-top:-10px;
+}
+
+.leftLantern {
+  position: absolute;
+  width: 150px;
+  height:310px;
+  margin-top:-15px;
+  margin-left: -5px;
+}
 .mainSection {
   background-image: url("../images/border.png");
   background-size: cover;
