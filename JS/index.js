@@ -28,11 +28,10 @@ $(document).ready(function(){
     $(".buttonOne").on("click", function(){
       if (currentScene.audioOne) { currentScene.audioOne.play() };
       currentScene = currentScene.option1;
+      setCurrentScene();
       if (currentScene.end) {
         $mainSection.hide()
         $gameOverSection.show();
-      } else {
-        setCurrentScene();
       }
     });
   }
@@ -41,11 +40,10 @@ $(document).ready(function(){
     $(".buttonTwo").on("click", function(){
       if (currentScene.audioTwo) { currentScene.audioTwo.play() };
       currentScene = currentScene.option2;
+      setCurrentScene();
       if (currentScene.end) {
         $mainSection.hide()
         $gameOverSection.show();
-      } else {
-        setCurrentScene();
       }
     });
   }
@@ -54,6 +52,8 @@ $(document).ready(function(){
     $(".buttonThree").on("click", function(){
       currentScene = foodScene;
       setCurrentScene();
+      $mainSection.show()
+      $gameOverSection.hide();
     });
   }
 

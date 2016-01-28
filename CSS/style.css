@@ -53,9 +53,27 @@ body {
 }
 
 .gameOverSection {
-/*  display: none;*/
+  background-image: url("../images/border.png");
+  background-size: cover;
+  width: 900px;
+  text-align: center;
+  margin: 0 0 0 145px;
+  display: none;
 }
 
+.gameOverText {
+  height: 60px;
+  width: 800px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: black;
+  font-size:23px;
+  font-weight: bold;
+  text-align:center;
+  font-family: 'Special Elite', cursive;
+}
 .question {
 /*  background-image: url(http://www.oldroseland.com/images/paper_scroll.gif);
   background-size:cover;*/
@@ -126,5 +144,5 @@ img {
   background: black;
   color: white;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
