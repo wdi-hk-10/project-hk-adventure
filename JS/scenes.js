@@ -46,7 +46,7 @@ var foodPoisonScene = new Scene({
 var afterJunkScene = new Scene({
   imageOne: "./images/LKF.jpg",
   imageTwo: "./images/wanChai.jpg",
-  question: "The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
+  question: "Epic junk boat party! The junk dropped you off at central pier where you continued to drink until 10pm. You are now wasted. Where would you like to go?",
   buttonOne: "LKF woohoo!!!",
   buttonTwo: "WanChai woohoo!!!",
   audioOne: "./images/lkf.mp3",
@@ -76,9 +76,9 @@ var hospitalScene = new Scene({
 var lkfScene = new Scene({
   imageOne: "./images/7-11.jpg",
   imageTwo: "./images/dragoni.jpg",
-  question: "You are now in LKF. Where do you drink?",
+  question: "You manage to stumble through central and find yourself in the heart of LKF. Where do you drink?",
   buttonOne: "7 Eleven all the way!!!",
-  buttonTwo: "Dragon I!",
+  buttonTwo: "dragon-i!",
   audioOne: "./images/gameOver.mp3",
   audioTwo: "./images/usher.mp3"
 });
@@ -89,8 +89,8 @@ var wanChaiScene = new Scene({
   question: "You are now in Wanchai. What do you want to do?",
   buttonOne: "Karaoke!!!",
   buttonTwo: "Drink!!!",
-  audioOne: "./images/chat.mp3",
-  audioTwo: "./images/chat.mp3"
+  audioOne: "./images/karaoke.mp3",
+  audioTwo: "./images/drink.mp3"
 });
 
 var happyValleyScene = new Scene({
@@ -99,8 +99,8 @@ var happyValleyScene = new Scene({
   question: "You have arrived at Happy Valley. Where do you go to watch the races?",
   buttonOne: "Corporate box",
   buttonTwo: "With the crazy crowd",
-  audioOne: "./images/chat.mp3",
-  audioTwo: "./images/chat.mp3"
+  audioOne: "./images/gameOver.mp3",
+  audioTwo: "./images/crowd.mp3"
 });
 
 var crazyCrowdScene = new Scene({
@@ -109,8 +109,8 @@ var crazyCrowdScene = new Scene({
   question: "You're in the crowd and it's fancy dress all the way. Who do you party with?",
   buttonOne: "Darth Vader",
   buttonTwo: "Bat girl",
-  audioOne: "./images/chat.mp3",
-  audioTwo: "./images/chat.mp3"
+  audioOne: "./images/vader.mp3",
+  audioTwo: "./images/gameOver.mp3"
 });
 
 var macauScene = new Scene({
@@ -119,14 +119,14 @@ var macauScene = new Scene({
   question: "Wow it's off to Macau huh? How will you travel with your friends?",
   buttonOne: "Ferry",
   buttonTwo: "Helicopter VIP all the way",
-  audioOne: "./images/chat.mp3",
-  audioTwo: "./images/chat.mp3"
+  audioOne: "./images/lonely.mp3",
+  audioTwo: "./images/winner.mp3"
 });
 
 var end1Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/tHlOuVV6adMkM.gif",
-  question: "You pass out in the gutter. After waking up you grab a burrito and stumble home at 7am. Hungover for days. Well done.",
+  question: "Oh dear - you pass out in the gutter. After waking up you grab a burrito and stumble home at 7am. It takes you days to recover from your hangover. GAME OVER.",
   buttonOne: "",
   buttonTwo: "",
   end: true
@@ -135,7 +135,7 @@ var end1Scene = new Scene({
 var end2Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/qAY88sMHhEPnO.gif",
-  question: "You bump into Usher in dragonI and dance it up.",
+  question: "You bump into Usher in dragon-i, join his entourage and show him your dance moves. He invites you to join him on his next world tour. GAME OVER.",
   buttonOne: "",
   buttonTwo: "",
   end: true
@@ -144,7 +144,7 @@ var end2Scene = new Scene({
 var end3Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/TMu8bS0hQxCX6.gif",
-  question: "You nailed the latest Justin Bieber song. Went home a hero - well done.",
+  question: "You nailed the classic Whitney song followed by the latest Justin Bieber song. You went home a hero. GAME OVER.",
   buttonOne: "",
   buttonTwo: "",
   end: true
@@ -153,7 +153,7 @@ var end3Scene = new Scene({
 var end4Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/phsUpW8VbXgRO.gif",
-  question: "In a case of mistaken identiy,a HK triad gang storms the bar. You drunkenly fight them off, and they all go home crying to their mother.",
+  question: "In a case of mistaken identiy,a Hong Kong triad gang storms the bar. You drunkenly fight them off, and they all go home crying to their mother. GAME OVER.",
   buttonOne: "",
   buttonTwo: "",
   end: true
@@ -162,7 +162,7 @@ var end4Scene = new Scene({
 var end5Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/Achrz20r7S7Di.gif",
-  question: "You have a boring night out with boring people in suits. You wish you were out with the crowd having fun. Bad move - go home and sulk.",
+  question: "You have a boring night out with boring people in suits. You wish you were out with the crowd having fun. Bad move - you go home and sulk. GAME OVER.",
   buttonOne: "",
   buttonTwo: "",
   end: true
@@ -171,7 +171,7 @@ var end5Scene = new Scene({
 var end6Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/Vj9poc6x6zg8E.gif",
-  question: "Turns out Vader can kick it. You have the best night of your life.",
+  question: "Turns out Vader can kick it. He knows all the bouncers and gets you into the hottest nightclubs in town. You have the best night of your life... GAME OVER.",
   buttonOne: "",
   buttonTwo: "",
   end: true
@@ -180,7 +180,7 @@ var end6Scene = new Scene({
 var end7Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/599WsrtJIj2b6.gif",
-  question: "Bat girl turns out to be one of the most notorious con- artists in Hong Kong. You lose your wallet, phone, watch, clothes and dignity.",
+  question: "Bat girl turns out to be one of the most notorious con- artists in Hong Kong. You lose your wallet, phone, watch, clothes... and dignity.",
   buttonOne: "",
   buttonTwo: "",
   end: true
@@ -198,7 +198,7 @@ var end8Scene = new Scene({
 var end9Scene = new Scene({
   imageOne: "./images/gameOver.jpg",
   imageTwo: "http://i.giphy.com/l3nWmPFBffbkCd3Ow.gif",
-  question: "You win at everything. Pay for a night at the penthouse suite at the Wynn and have the Best. Night. Ever.",
+  question: "You win at EVERYTHING. You make it rain with $1000HKD bills. Pay for a night at the penthouse suite at the Wynn. Best. Night. Ever. GAME OVER.",
   buttonOne: "",
   buttonTwo: "",
   end: true
