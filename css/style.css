@@ -1,0 +1,179 @@
+body {
+  background-image: url("../images/background.jpg");
+}
+
+.topHeading {
+/*  background-image: url("../images/hongkong2.jpg");*/
+  background: url("../images/HEADER.png");
+  background-position: center;
+  width: 900px;
+  height: 220px;
+  text-align: center;
+  margin: 0 0 0 145px;
+  color: white;
+}
+
+.headingPicOne {
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  margin-left: -375px;
+  margin-top: 45px;
+}
+
+.headingPicTwo {
+  width: 270px;
+  height: 65px;
+  position: absolute;
+  margin-left: 185px;
+  margin-top: 91px;
+}
+
+.rightLantern {
+  position: absolute;
+  width: 130px;
+  height:300px;
+  margin-left:1275px;
+  margin-top:-10px;
+}
+
+.leftLantern {
+  position: absolute;
+  width: 150px;
+  height:310px;
+  margin-top:-15px;
+  margin-left: -5px;
+}
+
+.mainSection {
+  background-image: url("../images/border.png");
+  background-size: 100%;
+  width: 900px;
+  text-align: center;
+  margin: 0 0 0 145px;
+}
+
+.gameOverSection {
+  background-image: url("../images/border.png");
+  background-size: cover;
+  width: 900px;
+  text-align: center;
+  margin: 0 0 0 145px;
+  display: none;
+}
+
+.gameOverText {
+  height: 60px;
+  width: 800px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: black;
+  font-size:23px;
+  font-weight: bold;
+  text-align:center;
+  font-family: 'Special Elite', cursive;
+}
+.question {
+/*  background-image: url(http://www.oldroseland.com/images/paper_scroll.gif);
+  background-size:cover;*/
+  height: 60px;
+  width: 800px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: black;
+  font-size:23px;
+  font-weight: bold;
+  text-align:center;
+  font-family: 'Special Elite', cursive;
+}
+
+.imageSelection {
+  text-align: center;
+  background: none;
+  margin-bottom: 20px;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  height: 300px;
+  width: 400px;
+}
+
+.imageOne {
+  margin-left: 20px;
+}
+
+.imageTwo {
+  margin-right: 20px;
+}
+.buttonRow {
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+
+.buttonBack {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.buttonOne {
+  width: 400px;
+  height: 50px;
+  color: white;
+  font-size: 24px;
+  margin-left: 20px;
+  border-top: 1px solid #96d1f8;
+  background: -webkit-linear-gradient(top, #ff0000, #ad2828);
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+.buttonOne:hover {
+  background-image: url("../images/buttonOnehover.png");
+}
+
+.buttonTwo {
+  width: 400px;
+  height: 50px;
+  color: white;
+  font-size: 24px;
+  margin-right: 20px;
+  border-top: 1px solid #96d1f8;
+  background: -webkit-linear-gradient(top, #03b800, #026300);
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+.buttonTwo:hover {
+  background-image: url("../images/buttonTwohover.png");
+}
+
+.buttonThree {
+  width: 200px;
+  height: 40px;
+  background: -webkit-linear-gradient(top, #1e00ff, #030061);
+  color: white;
+  font-size: 20px;
+  margin-bottom: 70px;
+  border-top: 1px solid #96d1f8;
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+.buttonThree:hover {
+  background: #141463;
+}
+
+.buttonOne:focus, .buttonTwo:focus, .buttonThree:focus {
+  outline:0;
+}

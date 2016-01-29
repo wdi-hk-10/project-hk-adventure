@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HK Adventures</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <script src="./js/jquery-1.12.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/scenes.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+
+<audio autoplay>
+  <source src="./images/music.mp3">
+</audio>
+
+<div class="container">
+  <img class="leftLantern" src="./images/leftLantern.png">
+  <img class="rightLantern" src="./images/rightLantern.png">
+  <header>
+    <div class="row">
+      <div class="topHeading col-lg-12">
+        <img class="headingPicOne" src="./images/hkheading2.gif">
+        <img class="headingPicTwo" src="./images/pink2.png">
+        <h1></h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="row">
+
+    <!--   MAIN SECTION IS TO BE SHOWN DURING GAME PLAY AND HIDDEN WHEN STARTING SCREEN AND GAME OVER SCREEN APPEARS -->
+    <div class="col-xs-12 mainSection">
+      <div class="question">What is the question?</div>
+      <div class="row">
+        <div class="col-xs-6 imageSelection">
+          <img class="imageOne" src="./images/HK1.jpg">
+          <button class="buttonOne">Option 1</button>
+        </div>
+        <div class="col-xs-6 imageSelection">
+          <img class="imageTwo" src="./images/HK2.jpg">
+          <button class="buttonTwo">Option 2</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 buttonBack">
+          <button class="buttonThree">Back to the start</button>
+      </div>
+    </div>
+  </div>
+
+<!--   GAME OVER SECTION WITH END GAME SCENARIOS  -->
+    <div class="col-xs-12 gameOverSection">
+      <div class="question">You passed out from too much alcohol. Game Over.
+      </div>
+      <div class="row">
+        <div class="col-xs-12 gameOverImage">
+          <img class="imageTwo" src="http://i.giphy.com/tHlOuVV6adMkM.gif">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 buttonBack">
+          <button class="buttonThree">Back to the start</button>
+        </div>
+      </div>
+    </div>
+
+  <footer>
+    <div>
+
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
