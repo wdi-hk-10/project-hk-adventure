@@ -44,9 +44,10 @@ body {
   margin-top:-15px;
   margin-left: -5px;
 }
+
 .mainSection {
   background-image: url("../images/border.png");
-  background-size: cover;
+  background-size: 100%;
   width: 900px;
   text-align: center;
   margin: 0 0 0 145px;
@@ -121,29 +122,58 @@ img {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .buttonOne {
   width: 400px;
   height: 50px;
-  background: red;
   color: white;
   font-size: 24px;
   margin-left: 20px;
+  border-top: 1px solid #96d1f8;
+  background: -webkit-linear-gradient(top, #ff0000, #ad2828);
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+.buttonOne:hover {
+  background-image: url("../images/buttonOnehover.png");
 }
 
 .buttonTwo {
   width: 400px;
   height: 50px;
-  background: green;
   color: white;
   font-size: 24px;
   margin-right: 20px;
+  border-top: 1px solid #96d1f8;
+  background: -webkit-linear-gradient(top, #03b800, #026300);
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+.buttonTwo:hover {
+  background-image: url("../images/buttonTwohover.png");
 }
 
 .buttonThree {
   width: 200px;
   height: 40px;
-  background: black;
+  background: -webkit-linear-gradient(top, #1e00ff, #030061);
   color: white;
   font-size: 20px;
   margin-bottom: 70px;
+  border-top: 1px solid #96d1f8;
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+}
+
+.buttonThree:hover {
+  background: #141463;
+}
+
+.buttonOne:focus, .buttonTwo:focus, .buttonThree:focus {
+  outline:0;
 }

@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(".leftLantern").animate({left: '130px'});
   }
 
-  var setCurrentScene = function() {
+  var setCurrentScene = function () {
     $(".imageOne").attr("src", currentScene.imageOne);
     $(".imageTwo").attr("src", currentScene.imageTwo);
     $(".question").text(currentScene.question);
